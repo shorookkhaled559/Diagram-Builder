@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagram Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+    <h1 class="text-3xl font-bold text-indigo-700 mb-6">Diagram Builder</h1>
+
+    <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-lg">
+      <div id="connections" class="space-y-4">
+        <div
+          class="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0"
+        >
+          <input
+            type="text"
+            placeholder="From"
+            class="from flex-1 border p-2 rounded"
+          />
+          <input
+            type="text"
+            placeholder="To"
+            class="to flex-1 border p-2 rounded"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:space-x-2 mt-4">
+        <button
+          id="addRow"
+          class="bg-green-500 text-white font-semibold px-4 py-2 rounded hover:bg-green-600 flex-1"
+        >
+          <i class="fa-solid fa-plus"></i> Add Connection
+        </button>
+        <button
+          id="generateBtn"
+          class="bg-indigo-600 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-700 flex-1 mt-2 sm:mt-0"
+        >
+          <i class="fa-solid fa-diagram-project"></i> Generate Diagram
+        </button>
+      </div>
+
+      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <button
+          id="exportSvg"
+          class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-file-code"></i> SVG
+        </button>
+        <button
+          id="exportPng"
+          class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-image"></i> PNG
+        </button>
+        <button
+          id="exportPdf"
+          class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700 flex items-center justify-center gap-2"
+        >
+          <i class="fa-solid fa-file-pdf"></i> PDF
+        </button>
+      </div>
+    </div>
+
+    <div id="message" class="mt-4 text-center font-semibold"></div>
+    <div
+      id="result"
+      class="mt-8 w-full max-w-3xl text-center overflow-auto"
+    ></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
