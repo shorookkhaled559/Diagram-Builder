@@ -8,7 +8,7 @@ It’s built with **HTML, Tailwind CSS, and JavaScript**, and provides a **clean
 ## Live Demo  
 
 You can try the live version here:  
-[Live Demo](https://shoroukkhaled559.github.io/Diagram-Builder/)  
+[Live Demo](https://shorookkhaled559.github.io/Diagram-Builder/)  
 
 ---
 
