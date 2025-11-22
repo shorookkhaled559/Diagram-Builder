@@ -88,7 +88,7 @@ Diagram-Builder/
 
 1. Clone this repository:  
 ```bash
-git clone https://github.com/yourusername/Diagram-Builder.git
+git clone https://github.com/shorookkhaled559/Diagram-Builder
 ```
 2. Navigate to the project folder:  
 ```bash
